@@ -6,6 +6,10 @@
 @time:    2019/1/29 19:50
 """
 
+'''
+一个爬虫的小程序，输入为诗人的列表，然后从网站中获取其所有的诗词数据并根据诗人名称存为txt文件
+'''
+
 from bs4 import BeautifulSoup
 import requests
 import json
