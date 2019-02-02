@@ -22,6 +22,7 @@ save_dir = 'checkpoints'  #模型文件的保存路径，建议多选备份模�
 save_path = os.path.join(save_dir, 'best_validation')  # 最佳验证结果保存路径
 
 def piePlot(title, data, result):
+	'''根据结果绘制饼图'''
     plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
     labels = []
     sizes = []
@@ -49,7 +50,6 @@ class CnnModel:
         saver.restore(sess=self.session, save_path=save_path)  # 读取保存的模型
 
     def predict(self, title, message):
-        # 支持不论在python2还是python3下训练的模型都可以在2或者3的环境下运行
         content = unicode(message)
         data = [self.word_to_id[x] for x in content if x in self.word_to_id]
 

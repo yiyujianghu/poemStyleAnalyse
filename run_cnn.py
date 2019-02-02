@@ -17,10 +17,10 @@ from data.cnews_loader import read_vocab, read_category, batch_iter, process_fil
 
 base_dir = 'data/poemdata'
 
-train_dir = os.path.join(base_dir, 'cnews.train.txt')
-test_dir = os.path.join(base_dir, 'cnews.test.txt')
-val_dir = os.path.join(base_dir, 'cnews.val.txt')
-vocab_dir = os.path.join(base_dir, 'cnews.vocab.txt')
+train_dir = os.path.join(base_dir, 'poems.train.txt')
+test_dir = os.path.join(base_dir, 'poems.test.txt')
+val_dir = os.path.join(base_dir, 'poems.val.txt')
+vocab_dir = os.path.join(base_dir, 'poems.vocab.txt')
 
 
 save_dir = 'checkpoints'           #模型文件的保存路径，建议多选备份模型
