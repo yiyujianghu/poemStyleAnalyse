@@ -75,4 +75,5 @@ if __name__ == '__main__':
     cnn_model = CnnModel()
     title = "浣溪沙·七夕"
     content = "遥望长风万里青，重山遮断雾回萦。何来乌鹊落轻盈。驿路云深歌碧月，高台风冷数繁星。梦见飞花梦见卿。"
-    cnn_model.predict(title, content)
+	contentBoost = content * (1 + 1000//len(content))
+    cnn_model.predict(title, contentBoost)
